@@ -1,0 +1,12 @@
+[package]
+name = "webluau"
+version = "0.1.0"
+edition = "2021"
+build = "src/build.rs"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+emscripten-val = "0.1.7"
+mlua = { version = "0.10.1", features = ["luau"] }
